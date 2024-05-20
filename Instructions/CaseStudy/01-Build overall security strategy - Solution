@@ -4,23 +4,23 @@ Tailwind Traders puede aprovechar la Arquitectura de Referencia en la Nube de Mi
 
 **1. Autenticación sin contraseña/MFA e inteligencia de amenazas con MCRA**
 
-**Diseño:**
+###Diseño:###
 
-* **Azure Active Directory (AAD):** Implementar AAD como el sistema central de gestión de identidades y accesos.
-* **Azure Multi-Factor Authentication (MFA):** Aplicar MFA para el acceso de todos los usuarios. Integrar con proveedores de MFA de terceros si es necesario.
-* **Acceso condicional de Azure AD:** Utilizar las directivas de acceso condicional para imponer métodos de autenticación sin contraseña como Windows Hello, claves de seguridad FIDO2 o aplicaciones de autenticación móviles para grupos de usuarios específicos o en función de factores de riesgo.
-* **Microsoft Defender for Cloud:** Utilizar Defender for Cloud para obtener inteligencia sobre amenazas y análisis del comportamiento de los usuarios. Integrarlo con AAD para desencadenar restricciones de acceso condicional basadas en actividades sospechosas.
+* Azure Active Directory (AAD): Implementar AAD como el sistema central de gestión de identidades y accesos.
+* Azure Multi-Factor Authentication (MFA): Aplicar MFA para el acceso de todos los usuarios. Integrar con proveedores de MFA de terceros si es necesario.
+* Acceso condicional de Azure AD: Utilizar las directivas de acceso condicional para imponer métodos de autenticación sin contraseña como Windows Hello, claves de seguridad FIDO2 o aplicaciones de autenticación móviles para grupos de usuarios específicos o en función de factores de riesgo.
+* **Microsoft Defender for Cloud: Utilizar Defender for Cloud para obtener inteligencia sobre amenazas y análisis del comportamiento de los usuarios. Integrarlo con AAD para desencadenar restricciones de acceso condicional basadas en actividades sospechosas.
 
-**Toma de decisiones:**
+###Toma de decisiones:###
 
 * AAD ofrece una plataforma centralizada para las identidades de usuario y el control de acceso.
 * MFA añade una capa adicional de seguridad más allá de las contraseñas.
 * El acceso condicional permite un control granular basado en factores de riesgo.
 * Defender for Cloud proporciona inteligencia sobre amenazas y supervisión del comportamiento de los usuarios.
 
-**2. Integridad de los puntos de acceso con MCRA**
+###2. Integridad de los puntos de acceso con MCRA###
 
-**Diseño:**
+###Diseño:###
 
 * **Microsoft Endpoint Manager (MEM):** Utilizar MEM para la gestión y configuración de dispositivos.
 * **Microsoft Endpoint Protection (Defender Antivirus):** Implementar Defender Antivirus en todos los puntos de acceso para la protección contra amenazas en tiempo real.
