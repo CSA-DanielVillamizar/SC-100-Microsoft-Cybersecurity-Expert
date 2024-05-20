@@ -1,0 +1,38 @@
+## Tailwind Traders: Reforzar la seguridad de las identidades con Azure
+
+Tailwind Traders puede aprovechar Azure Active Directory (AAD) para implementar una seguridad de identidad sólida para usuarios privilegiados y hacer cumplir los controles de acceso. A continuación, se muestra cómo pueden abordar sus requisitos:
+
+**Exigir MFA para usuarios privilegiados**
+
+* **Acceso condicional de Azure AD:** Implemente políticas de acceso condicional para exigir MFA para todos los intentos de acceso de usuarios privilegiados. Configure estas políticas para considerar factores como la ubicación, la plataforma del dispositivo y el nivel de riesgo del usuario.
+
+**Toma de decisiones:**
+
+* El acceso condicional proporciona un control granular sobre los requisitos de acceso en función de los atributos del usuario y el contexto de acceso.
+* MFA agrega una capa adicional de seguridad más allá de las contraseñas, lo que dificulta que los usuarios no autorizados obtengan acceso incluso si obtienen una contraseña.
+
+**Revisión del acceso del administrador**
+
+* **Azure AD Privileged Access Management (PAM):** Implemente PAM para controlar y supervisar el acceso de usuarios privilegiados a los recursos de Azure. Esto incluye características como:
+    * **Acceso Just-In-Time (JIT):** Otorgue acceso temporal solo cuando sea necesario, minimizando la ventana de tiempo para un posible compromiso.
+    * **Registro de sesiones privilegiadas:** Registre las sesiones de usuarios privilegiados para auditoría y responsabilidad.
+
+**Toma de decisiones:**
+
+* PAM proporciona medidas de seguridad adicionales específicamente para cuentas privilegiadas, lo que reduce el riesgo asociado con su acceso.
+* El acceso JIT minimiza la ventana de vulnerabilidad y la grabación de sesiones ayuda a identificar actividades sospechosas.
+
+**Hacer cumplir la seguridad de la identidad para todos los usuarios**
+
+**Solución:** Implemente un enfoque de múltiples capas para la seguridad de la identidad:
+
+* **Autenticación multifactor de Azure AD (MFA):** Implemente MFA para el acceso de todos los usuarios, no solo usuarios privilegiados.
+* **Azure AD Identity Protection:** Utilice Identity Protection para el control de acceso basado en riesgos. Este servicio analiza el comportamiento del usuario e identifica intentos de inicio de sesión riesgosos.
+* **Acceso condicional de Azure AD:** Configure políticas de acceso condicional para exigir requisitos de antigüedad de la contraseña, bloquear inicios de sesión riesgosos y restringir el acceso según la ubicación o el dispositivo.
+
+**Toma de decisiones:**
+
+* La combinación de MFA, Identity Protection y Conditional Access crea una defensa integral contra ataques basados ​​en la identidad.
+* MFA fortalece la autenticación, Identity Protection ayuda a identificar inicios de sesión riesgosos y Conditional Access permite un control de acceso granular basado en varios factores.
+
+Este enfoque garantiza una seguridad de identidad sólida para todos los usuarios, con controles adicionales para cuentas privilegiadas. Se alinea con los principios de Zero Trust al verificar continuamente las identidades de los usuarios y los permisos de acceso.
