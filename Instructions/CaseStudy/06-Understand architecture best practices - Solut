@@ -1,0 +1,39 @@
+## Tailwind Traders: Modernización de la estrategia de seguridad para la nube
+
+Tailwind Traders se encuentra en una transformación a la nube y necesita una estrategia de seguridad robusta para empoderar a los trabajadores remotos y proteger su entorno de Azure. A continuación, se muestra cómo pueden lograr sus objetivos:
+
+**Principios de la estrategia de seguridad**
+
+* **Zero Trust:** Implemente un modelo de seguridad Zero Trust que asuma que ningún usuario o dispositivo es intrínsecamente confiable. Todos los intentos de acceso deben verificarse continuamente.
+* **Menos privilegios:** Otorgue a los usuarios solo los permisos de acceso mínimos necesarios para realizar su trabajo.
+* **Defensa en profundidad:** Emplee múltiples capas de seguridad para mitigar el impacto de posibles brechas.
+* **Automatización de la seguridad:** Automatice las tareas de seguridad siempre que sea posible para mejorar la eficiencia y reducir el error humano.
+* **Monitoreo continuo:** Monitoree continuamente la postura de seguridad e identifique y aborde proactivamente las amenazas.
+
+**Aprobación de la estrategia de seguridad**
+
+La estrategia de seguridad debe ser revisada y aprobada por las siguientes partes interesadas:
+
+* **CISO:** Posee la estrategia de seguridad y garantiza la alineación con los objetivos comerciales generales.
+* **CIO:** Brinda liderazgo y recursos para implementar la estrategia de seguridad.
+* **Equipo de estrategia en la nube:** Aporta experiencia en tecnologías en la nube y mejores prácticas.
+* **Equipo de seguridad en la nube:** Proporciona experiencia en seguridad para desarrollar e implementar la estrategia.
+
+**Validación de la solución de seguridad**
+
+* **Azure Security Center:** Este servicio proporciona una vista completa de la postura de seguridad de los recursos de Azure. Monitorea continuamente las vulnerabilidades, las configuraciones incorrectas y las actividades sospechosas.
+
+**Definición de políticas de seguridad consistentes**
+
+* **Azure Policy:** Este servicio permite crear y hacer cumplir políticas que definen líneas de base de seguridad para los recursos de Azure. Garantiza una configuración de seguridad consistente en todo el entorno.
+
+**Habilitar pruebas seguras para el equipo de IA/Robótica**
+
+* **Grupos de recursos de Azure y plantillas de Azure Resource Manager (ARM):** Cree grupos de recursos dedicados para los proyectos de incubación del equipo de IA/Robótica. Utilice plantillas de ARM para definir entornos aislados con los recursos necesarios para las pruebas, evitando interrupciones en la producción.
+
+**Consideraciones adicionales:**
+
+* Aproveche los recursos de la comunidad de seguridad como Microsoft Security Documentation ([https://learn.microsoft.com/en-us/security/](https://learn.microsoft.com/en-us/security/)) y el blog de Microsoft Security ([https://www.microsoft.com/en-us/security/blog/](https://www.microsoft.com/en-us/security/blog/)) para mantenerse actualizado sobre las mejores prácticas y el panorama de amenazas.
+* Realice capacitación regular sobre concientización en seguridad para los empleados para asegurarse de que comprendan su papel en el mantenimiento de un entorno seguro.
+
+Al implementar estas recomendaciones, Tailwind Traders puede establecer una estrategia de seguridad moderna que empodera el trabajo remoto, protege su entorno en la nube y fomenta una cultura de conciencia de seguridad.
