@@ -1,0 +1,35 @@
+## Tailwind Traders: Seguridad DevOps para aplicaciones en la nube seguras
+
+Tailwind Traders está en transición de un modelo de desarrollo en cascada a un enfoque más seguro y ágil para sus aplicaciones en la nube en Azure. A continuación, se muestra cómo pueden lograr sus objetivos:
+
+**Cambio hacia DevSecOps**
+
+* **Limitaciones en cascada:** Los ciclos de desarrollo prolongados del modelo en cascada dificultan la resolución rápida de problemas de seguridad. Tailwind Traders debería adoptar un enfoque DevSecOps:
+    * **Integrar la seguridad en todo el ciclo de vida del desarrollo.**
+    * **Automatizar las pruebas de seguridad durante el proceso de desarrollo.**
+
+* **Beneficios de DevSecOps:**
+    * **Identificación y remediación más rápida de las vulnerabilidades de seguridad.**
+    * **Mejor colaboración entre los equipos de desarrollo y seguridad.**
+    * **Aplicaciones más seguras desde el principio.**
+
+**Seguridad para nuevas aplicaciones de Azure**
+
+* **Azure Security Center:** Este servicio proporciona prácticas recomendadas y recomendaciones de seguridad integradas para los recursos de Azure. Se puede integrar en la canalización de desarrollo para identificar y abordar automáticamente problemas de seguridad en el código.
+* **Pruebas estáticas de seguridad de aplicaciones (SAST):** Implementar herramientas SAST para escanear el código en busca de vulnerabilidades durante la fase de desarrollo.
+* **Pruebas dinámicas de seguridad de aplicaciones (DAST):** Integrar herramientas DAST en la canalización para escanear aplicaciones en ejecución en busca de vulnerabilidades.
+
+**Aplicación de la seguridad de las aplicaciones para los usuarios**
+
+* **Azure Active Directory (AAD):**
+    * **Autenticación multifactor (MFA):** Implemente MFA para todos los usuarios para agregar una capa adicional de seguridad durante el inicio de sesión.
+    * **Acceso condicional:** Implemente políticas de acceso condicional para restringir el acceso en función de la ubicación del usuario, el tipo de dispositivo u otros factores.
+* **Protección de identidad de Azure:** Este servicio supervisa la actividad de inicio de sesión de los usuarios y detecta comportamientos sospechosos para evitar el acceso no autorizado.
+* **Cifrado de datos:** Cifre los datos en reposo y en tránsito utilizando Azure Key Vault y otros servicios de cifrado.
+
+**Consideraciones adicionales:**
+
+* Realice capacitación regular sobre concientización en seguridad para desarrolladores y otras partes interesadas para asegurarse de que todos comprendan su papel en la seguridad de las aplicaciones.
+* Utilice campeones de seguridad dentro de los equipos de desarrollo para promover prácticas de codificación seguras.
+
+Al implementar prácticas de DevSecOps y aprovechar los servicios de seguridad de Azure, Tailwind Traders puede crear aplicaciones en la nube seguras y resistentes al mismo tiempo que protege las identidades y los datos de los usuarios.
