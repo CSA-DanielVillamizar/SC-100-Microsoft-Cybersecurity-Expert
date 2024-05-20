@@ -1,0 +1,27 @@
+## Tailwind Traders: Estrategia de acceso remoto y seguridad de puntos de acceso
+
+Tailwind Traders necesita habilitar un acceso remoto seguro para trabajadores y sucursales mientras protege los puntos de acceso contra los ciberataques. A continuación, se muestra cómo pueden lograr estos objetivos:
+
+**Acceso remoto**
+
+* **Trabajadores remotos:**
+    * **Proxy de aplicación de Azure AD:** Este servicio permite publicar aplicaciones locales en Azure AD. Los trabajadores remotos pueden acceder a estas aplicaciones de forma segura a través de un navegador web sin exponer puertos de administración en las cargas de trabajo.
+* **Sucursales remotas:**
+    * **Azure Virtual WAN:** Este servicio proporciona conectividad segura y escalable entre las sucursales y Azure. Puede configurar conexiones VPN de sitio a sitio para una comunicación confiable con la sede.
+
+**Estrategia de punto de acceso**
+
+* **Microsoft Endpoint Manager (MEM):** Este servicio permite implementar y administrar líneas de base de seguridad en varios puntos de acceso como computadoras de escritorio, portátiles y dispositivos móviles.
+    * **Perfiles de configuración:** Defina la configuración de seguridad para los puntos de acceso, incluidos antivirus, firewall, cifrado y otros controles de seguridad.
+    * **Políticas de cumplimiento:** Implemente estos perfiles de configuración en los puntos de acceso para garantizar una postura de seguridad coherente.
+
+* **Microsoft Defender para punto de acceso:** Esta plataforma de protección de puntos de acceso basada en la nube proporciona funciones completas de seguridad de puntos de acceso:
+    * **Detección y respuesta de puntos de acceso (EDR):** Permite al equipo de SOC investigar actividades sospechosas en los puntos de acceso, identificar la causa principal de los ataques y tomar medidas de remediación.
+    * **Gestión de vulnerabilidades:** Identifica vulnerabilidades en los puntos de acceso y ayuda a priorizar los esfuerzos de aplicación de parches.
+
+**Consideraciones adicionales:**
+
+* Aproveche Azure Sentinel, un servicio SIEM, para recopilar y analizar datos de seguridad de MEM y Defender para punto de acceso, proporcionando al equipo de SOC una vista centralizada para la investigación y la búsqueda de amenazas.
+* Revise y actualice periódicamente la línea de base de seguridad a medida que evolucionan las amenazas y vulnerabilidades.
+
+Al implementar estas soluciones, Tailwind Traders puede establecer un acceso remoto seguro para diversos grupos de usuarios, al tiempo que garantiza una seguridad de punto de acceso consistente y robusta, lo que permite a su equipo de SOC investigar y responder eficazmente a las amenazas potenciales.
