@@ -1,0 +1,35 @@
+## Contoso Pharma: Garantizar el cumplimiento en Azure
+
+Contoso Pharma está migrando cargas de trabajo a Azure y necesita garantizar el cumplimiento con diversas regulaciones como PCI DSS e HIPAA. A continuación, se muestra cómo pueden lograr sus objetivos:
+
+**Supervisión del progreso del cumplimiento**
+
+* **Azure Policy:** Este servicio permite definir y hacer cumplir políticas que garanticen el cumplimiento de las regulaciones. Puede rastrear el estado de cumplimiento a lo largo del tiempo al monitorear las configuraciones de los recursos.
+
+**Aplicación de estándares de aprovisionamiento de recursos**
+
+* **Azure Policy:** Una vez más, Azure Policy es ideal para esta tarea. Puede definir políticas que restringen la creación de recursos a menos que cumplan con requisitos de cumplimiento específicos (por ejemplo, configuraciones de cifrado, residencia de datos).
+
+**Garantizar la residencia de datos**
+
+* **Plantillas de Azure Resource Manager (ARM):** Desarrolle plantillas de ARM que preconfiguren recursos con la ubicación geográfica deseada durante la implementación. Esto garantiza que los datos permanezcan dentro de la región designada.
+
+**Validación del cumplimiento de VM**
+
+* **Azure Security Center:** Este servicio puede escanear las VM en busca de vulnerabilidades y problemas de configuración que podrían afectar el cumplimiento de PCI DSS. Además, puede aprovechar Azure Security Benchmark para PCI DSS para guiar su evaluación.
+
+**Cifrado de datos**
+
+* **Datos en reposo:** Utilice las opciones de cifrado del servicio de almacenamiento de Azure, como Azure Disk Encryption para VM y claves administradas por el cliente para cuentas de almacenamiento.
+* **Datos en tránsito:** Implemente la comunicación HTTPS para todas las aplicaciones que acceden a bases de datos u otros recursos. Esto se puede lograr mediante la configuración en servidores web y bases de datos.
+
+**Aplicación del cifrado de datos en todas las cargas de trabajo**
+
+* **Azure Key Vault:** Almacene las claves de cifrado de forma centralizada en Azure Key Vault e integrelo con servicios de Azure como Azure Disk Encryption y Azure SQL Database para administrar las claves de cifrado de forma segura.
+
+**Consideraciones adicionales:**
+
+* Contoso Pharma debería considerar migrar su servidor web heredado a Azure y actualizar el protocolo de comunicación a HTTPS para cumplir con las mejores prácticas de seguridad.
+* Es fundamental revisar y actualizar periódicamente las políticas y procedimientos de cumplimiento para mantener el cumplimiento a lo largo del tiempo.
+
+Al implementar estas soluciones, Contoso Pharma puede monitorear, aplicar y validar de manera efectiva el cumplimiento con diversas regulaciones al tiempo que garantiza la seguridad de los datos durante todo su ciclo de vida.
