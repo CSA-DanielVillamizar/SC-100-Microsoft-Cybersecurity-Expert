@@ -1,0 +1,73 @@
+## Plan de respuesta y mitigación de ransomware de Contoso
+
+**Introducción**
+
+El ransomware es una seria amenaza para cualquier organización, y Contoso, con su dependencia de los datos de salud digitales, es particularmente vulnerable. Este plan describe un enfoque integral para mitigar los riesgos de ransomware y garantizar una recuperación rápida en caso de un ataque.
+
+**Departamentos y personal involucrados**
+
+* **Liderazgo ejecutivo:** Aprueba el plan y asigna recursos.
+* **Seguridad de TI:** Implementa y mantiene controles de seguridad.
+* **Equipo de respuesta a incidentes:** Lidera la respuesta en caso de un ataque.
+* **Equipo de seguridad de datos:** Garantiza las copias de seguridad y el cifrado de datos.
+* **Legal y comunicaciones:** Gestiona problemas legales y comunicación externa.
+* **Recursos humanos:** Educa a los empleados sobre los riesgos del ransomware.
+
+**Servicios e infraestructura abordados**
+
+* **Infraestructura local:** Servidores, máquinas virtuales, dispositivos de red.
+* **Servicios en la nube de Azure:** Máquinas virtuales de Azure, Azure Storage, Azure Active Directory (AAD).
+* **Servicios de Microsoft 365:** Cargas de trabajo de Microsoft 365 (Exchange Online, OneDrive, SharePoint Online).
+* **Dispositivos de empleados:** Computadoras portátiles, dispositivos móviles.
+
+**Cronogramas**
+
+* **Desarrollo del plan:** 4-6 semanas (incluye evaluación de riesgos, desarrollo de políticas, capacitación).
+* **Implementación del plan:** 2-4 semanas (incluye la configuración de controles de seguridad, copias de seguridad).
+* **Pruebas y refinamiento:** Proceso continuo.
+
+**Por qué las copias de seguridad no son suficientes**
+
+Si bien las copias de seguridad son esenciales, por sí solas no son suficientes para la recuperación de ransomware. He aquí por qué:
+
+* **Los atacantes pueden atacar las copias de seguridad:** El ransomware moderno a menudo ataca las copias de seguridad para evitar la recuperación.
+* **Pérdida de datos durante la replicación:** El ransomware puede cifrar los datos antes de que se repliquen en las copias de seguridad.
+* **El tiempo de recuperación puede ser inaceptable:** La restauración desde copias de seguridad puede llevar mucho tiempo, superando el objetivo de recuperación de 12 horas de Contoso.
+
+**Servicios de Azure y M365 para la respuesta a ransomware**
+
+* **Azure Backup:** Realiza copias de seguridad de máquinas virtuales, bases de datos y archivos locales y de Azure.
+* **Azure Site Recovery:** Replica máquinas virtuales locales en Azure para la recuperación ante desastres (DR).
+* **Azure Active Directory (AAD):** 
+    * La autenticación multifactor (MFA) fortalece la seguridad de inicio de sesión.
+    * El acceso condicional restringe el acceso en función de la ubicación, el dispositivo, etc.
+* **Microsoft Defender for Cloud:** Proporciona detección de amenazas y controles de seguridad para los recursos de Azure.
+* **Microsoft Defender for Endpoint:** Protege los puntos de conexión (computadoras portátiles, dispositivos móviles) contra malware y ransomware.
+* **Microsoft 365 Defender:** Protege las cargas de trabajo de Microsoft 365 contra malware y ransomware.
+* **Microsoft 365 Purview:** Ayuda a administrar, gobernar y proteger datos confidenciales en Microsoft 365.
+
+**Compensaciones y consideraciones**
+
+* **Costos de respaldo:** Equilibrar las necesidades de protección de datos con los costos de almacenamiento.
+* **Objetivos de tiempo de recuperación (RTO):** Configurar copias de seguridad para tiempos de restauración más rápidos.
+* **Residencia de datos:** Asegurar que las copias de seguridad de datos cumplan con las regulaciones regionales (HIPAA).
+* **Capacitación del usuario:** Equilibrar la seguridad con la experiencia del usuario para la adopción de MFA.
+
+**Requisitos especiales**
+
+* Contoso puede necesitar herramientas o procesos adicionales para tipos de datos específicos no cubiertos por Azure o M365.
+* Los requisitos legales y de cumplimiento pueden requerir medidas de seguridad de datos adicionales.
+
+**Medidas de éxito**
+
+* Riesgo reducido de ataques de ransomware exitosos.
+* Tiempo de inactividad y pérdida de datos minimizados en caso de ataque.
+* Proceso de recuperación eficiente que cumple con los RTO y los objetivos de punto de recuperación (RPO).
+* Mayor conocimiento de los empleados sobre las amenazas de ransomware.
+
+**Próximos pasos**
+
+* Realice una evaluación de riesgos integral para identificar vulnerabilidades.
+* Desarrolle procedimientos detallados de respuesta a incidentes para diversos escenarios de ataque.
+* Implemente controles de seguridad y copias de seguridad de datos como se describe en el plan.
+* Realice sesiones de capacitación regulares para los empleados para educarlos sobre las mejores prácticas de ciberseguridad.
