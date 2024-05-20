@@ -1,3 +1,9 @@
+---
+casestudy:
+    title: 'CaseStudy: design a Zero Trust solution'
+    module: 'Module 1: Build overall security strategy'
+---
+
 ## Solución Zero Trust para Tailwind Traders con Azure MCRA ##
 
 Tailwind Traders puede aprovechar la Arquitectura de Referencia en la Nube de Microsoft (MCRA) para implementar un modelo de seguridad Zero Trust dentro de su entorno Azure. A continuación, se muestra cómo abordar sus requisitos:
