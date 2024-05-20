@@ -1,0 +1,32 @@
+## Tailwind Traders: Protección de cargas de trabajo en la nube
+
+Tailwind Traders necesita una estrategia de seguridad integral para sus cargas de trabajo PaaS, IaaS y SaaS en Azure y Microsoft 365. A continuación, se muestra cómo pueden lograr sus objetivos:
+
+**Clasificación y etiquetado de datos**
+
+* **Azure Purview:** Este servicio proporciona una solución de gobernanza de datos unificada. Permite clasificar y etiquetar datos en varios almacenes de datos de Azure, incluidas bases de datos SQL y cuentas de almacenamiento.
+
+**Gestión de la postura de seguridad en la nube y detección de amenazas**
+
+* **Microsoft Defender para Cloud:** Este servicio ofrece una plataforma integral de gestión de la postura de seguridad en la nube (CSPM):
+    * **Evaluación de vulnerabilidades:** Identifica vulnerabilidades en máquinas virtuales y contenedores.
+    * **Detección de amenazas:** Proporciona capacidades de detección de amenazas para Cosmos DB y otros recursos de Azure.
+
+**Línea de base de seguridad para cargas de trabajo de Microsoft 365**
+
+* **Microsoft 365 Defender:** Este servicio incluye herramientas y funciones para establecer líneas de base de seguridad para las cargas de trabajo de Microsoft 365.
+    * **Administrador de cumplimiento:** Ayuda a configurar la configuración de seguridad en función de los estándares de la industria y las mejores prácticas.
+    * **Alertas y remediación:** Proporciona alertas sobre actividades sospechosas y herramientas para la remediación.
+
+**Gestión de la postura de seguridad y detección de amenazas para IoT**
+
+* **Azure Sentinel:** Este servicio de gestión de información y eventos de seguridad (SIEM) se puede aprovechar para la seguridad de IoT:
+    * **Recopilación de registros:** Recopila datos de seguridad de dispositivos IoT y otras fuentes.
+    * **Detección de amenazas:** Analiza los datos recopilados para identificar posibles amenazas que apuntan a dispositivos IoT.
+
+**Consideraciones adicionales:**
+
+* Integre Azure Sentinel con Defender for Cloud y Microsoft 365 Defender para obtener una vista centralizada de la postura de seguridad y las amenazas en todas las cargas de trabajo.
+* Revise y actualice periódicamente las configuraciones y líneas de base de seguridad para mantener una postura de seguridad sólida.
+
+Al implementar estas soluciones, Tailwind Traders puede proteger de manera efectiva sus cargas de trabajo en la nube, asegurando la protección de datos, la detección de amenazas y la gestión de seguridad consistente en todo su entorno de TI.
