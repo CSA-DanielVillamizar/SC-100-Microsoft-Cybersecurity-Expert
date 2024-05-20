@@ -1,0 +1,54 @@
+## Contoso: Mejores Prácticas con MCRA y MCSB
+
+Contoso, una empresa de salud que migra a Azure, necesita fortalecer su postura de seguridad mientras cumple con las regulaciones HIPAA y NHS. A continuación, se muestra cómo pueden lograr sus objetivos utilizando los servicios de seguridad en la nube de Microsoft y las mejores prácticas:
+
+**Selección del Plan Defender**
+
+* **Microsoft Defender para Cloud:** Este servicio proporciona protección integral de la carga de trabajo en la nube. Contoso debe considerar el plan **Defender for Cloud Premium** para obtener protección avanzada contra amenazas, administración de vulnerabilidades y seguridad de identidad de la carga de trabajo.
+
+**Enfoque de Confianza Cero para la Validación de Acceso**
+
+* **Azure Active Directory (AAD):**
+    * **Acceso condicional:** Implemente políticas de acceso condicional para restringir el acceso en función de factores como la ubicación, el tipo de dispositivo y el riesgo del usuario.
+    * **Autenticación multifactor (MFA):** Implemente MFA para todos los usuarios para agregar una capa adicional de seguridad durante los intentos de inicio de sesión.
+* **Microsoft Defender para punto de conexión:** Este servicio se puede utilizar para la supervisión del comportamiento del dispositivo de punto de conexión para identificar actividades sospechosas y hacer cumplir los principios de Confianza Cero.
+
+**Aplicación de Políticas de HIPAA y NHS**
+
+* **Calificación de cumplimiento de Microsoft:** Este servicio ayuda a evaluar el cumplimiento de las regulaciones de la industria como HIPAA y NHS.
+* **Azure Policy:** Implemente Azure Policies para hacer cumplir configuraciones de seguridad alineadas con los requisitos de cumplimiento de HIPAA y NHS.
+
+**Visibilidad de Amenazas y Vulnerabilidades**
+
+* **Microsoft Sentinel:** Este servicio de gestión de información y eventos de seguridad (SIEM) proporciona una vista central de los datos de seguridad de diversas fuentes, incluidos Defender for Cloud, Defender for Endpoint y AAD. Se puede utilizar para la búsqueda de amenazas y la supervisión proactiva de la seguridad.
+
+**Administración y Seguridad de Dispositivos de Punto de Conexión**
+
+* **Microsoft Endpoint Manager (MEM):** Este servicio permite implementar y administrar configuraciones de seguridad en varios puntos de conexión como computadoras de escritorio, computadoras portátiles y dispositivos móviles. Contoso puede usar MEM para:
+    * Hacer cumplir las políticas de seguridad de puntos de conexión con funciones como antivirus, firewall y cifrado.
+    * Realizar evaluaciones de cumplimiento y corregir cualquier configuración incorrecta.
+
+**Visibilidad del Uso de Aplicaciones en la Nube y Compartir Datos**
+
+* **Microsoft Cloud App Security:** Este servicio proporciona visibilidad de las aplicaciones en la nube utilizadas por los empleados y permite políticas de prevención de pérdida de datos (DLP) para controlar cómo se comparten los datos externamente.
+
+**Recuperación ante Desastres y Copia de Seguridad**
+
+* **Copia de seguridad de Azure:** Realice copias de seguridad de datos críticos en el almacenamiento de Azure para la recuperación ante desastres.
+* **Azure Site Recovery:** Configure la recuperación ante desastres en una región de Azure secundaria para la conmutación por error automática en caso de una interrupción de la región primaria.
+
+**Gestión de Acceso Privilegiado**
+
+* **Azure Active Directory Privileged Identity Management (PIM):** Implemente Azure AD PIM para administrar cuentas privilegiadas con principios de mínimo privilegio y hacer cumplir políticas de acceso justo a tiempo (JIT).
+
+**Conexiones VPN P2S Seguras**
+
+* **VPN de punto a sitio de Azure:** Configure conexiones VPN de punto a sitio utilizando protocolos estándar de la industria como IKEv2 y SSTP para proporcionar acceso remoto seguro para diversas plataformas de dispositivos.
+
+**Consideraciones adicionales**
+
+* Implemente soluciones de gestión de dispositivos móviles (MDM) para administrar y proteger los dispositivos móviles utilizados por los profesionales de la salud.
+* Cifre los datos en reposo y en tránsito utilizando Azure Key Vault y otros servicios de cifrado.
+* Realice capacitación regular sobre concientización en seguridad para los empleados para educarlos sobre las mejores prácticas de ciberseguridad.
+
+Al implementar estas soluciones y seguir los principios de Confianza Cero, Contoso puede lograr una postura de seguridad sólida para su entorno en la nube al tiempo que garantiza el cumplimiento con las regulaciones HIPAA y NHS.
