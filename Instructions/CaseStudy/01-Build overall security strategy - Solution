@@ -1,0 +1,63 @@
+## Solución Zero Trust para Tailwind Traders con Azure MCRA
+
+Tailwind Traders puede aprovechar la Arquitectura de Referencia en la Nube de Microsoft (MCRA) para implementar un modelo de seguridad Zero Trust dentro de su entorno Azure. A continuación, se muestra cómo abordar sus requisitos:
+
+**1. Autenticación sin contraseña/MFA e inteligencia de amenazas con MCRA**
+
+**Diseño:**
+
+* **Azure Active Directory (AAD):** Implementar AAD como el sistema central de gestión de identidades y accesos.
+* **Azure Multi-Factor Authentication (MFA):** Aplicar MFA para el acceso de todos los usuarios. Integrar con proveedores de MFA de terceros si es necesario.
+* **Acceso condicional de Azure AD:** Utilizar las directivas de acceso condicional para imponer métodos de autenticación sin contraseña como Windows Hello, claves de seguridad FIDO2 o aplicaciones de autenticación móviles para grupos de usuarios específicos o en función de factores de riesgo.
+* **Microsoft Defender for Cloud:** Utilizar Defender for Cloud para obtener inteligencia sobre amenazas y análisis del comportamiento de los usuarios. Integrarlo con AAD para desencadenar restricciones de acceso condicional basadas en actividades sospechosas.
+
+**Toma de decisiones:**
+
+* AAD ofrece una plataforma centralizada para las identidades de usuario y el control de acceso.
+* MFA añade una capa adicional de seguridad más allá de las contraseñas.
+* El acceso condicional permite un control granular basado en factores de riesgo.
+* Defender for Cloud proporciona inteligencia sobre amenazas y supervisión del comportamiento de los usuarios.
+
+**2. Integridad de los puntos de acceso con MCRA**
+
+**Diseño:**
+
+* **Microsoft Endpoint Manager (MEM):** Utilizar MEM para la gestión y configuración de dispositivos.
+* **Microsoft Endpoint Protection (Defender Antivirus):** Implementar Defender Antivirus en todos los puntos de acceso para la protección contra amenazas en tiempo real.
+* **Acceso condicional:** Integrar MEM con el acceso condicional de AAD. Solo permitir el acceso desde dispositivos compatibles que cumplan con requisitos de estado específicos (por ejemplo, antivirus actualizado, cifrado).
+
+**Toma de decisiones:**
+
+* MEM ofrece una plataforma unificada para la gestión y configuración de dispositivos.
+* Defender Antivirus proporciona protección para los puntos de acceso.
+* El acceso condicional garantiza que solo los dispositivos compatibles puedan acceder a los recursos.
+
+**3. Filtrado y segmentación del tráfico de red con MCRA**
+
+**Opción 1: Emparejamiento de redes virtuales de Azure (VNet) y grupos de seguridad de red (NSG):**
+
+* **Diseño:** Crear redes virtuales independientes para recursos críticos para el negocio y altamente vulnerables.
+* **Emparejamiento:** Establecer conexiones de emparejamiento entre redes virtuales para el flujo de tráfico autorizado.
+* **NSG:** Configurar NSG en cada subred de la red virtual para restringir el tráfico entrante y saliente en función de las necesidades de seguridad.
+
+**Opción 2: Firewall de Azure:**
+
+* **Diseño:** Implementar un firewall de Azure como punto central de control de tráfico.
+* **Definición de políticas:** Definir políticas de firewall para permitir/denegar el flujo de tráfico entre redes virtuales, Internet y redes locales en función de los requisitos de seguridad.
+
+**Toma de decisiones:**
+
+Ambas opciones logran la segmentación de la red:
+
+* El emparejamiento de redes virtuales + NSG ofrecen un control granular, pero requieren más sobrecarga de gestión.
+* El firewall de Azure proporciona un punto centralizado de aplicación de políticas y simplifica la gestión, pero podría requerir una configuración adicional para escenarios complejos.
+
+**Decisión final:** La elección depende de la complejidad y el nivel de control deseado. Para una segmentación de red más simple, el emparejamiento de redes virtuales + NSG podría ser suficiente. Para escenarios complejos con numerosos recursos y necesidades de control de tráfico granular, Azure Firewall ofrece un enfoque más centralizado y escalable.
+
+**4. Incorporación de MCRA para una arquitectura segura, de alta disponibilidad y eficiente:**
+
+* **Seguridad:** MCRA proporciona las mejores prácticas para implementar principios de Zero Trust como el control de identidad y acceso, la seguridad de los puntos de acceso y la segmentación de la red.
+* **Alta disponibilidad:** MCRA promueve el diseño de aplicaciones y recursos con redundancia y recuperación ante desastres en mente para una operación continua.
+* **Eficiencia:** MCRA se centra en el uso eficaz de los servicios de Azure, optimizando al mismo tiempo los costes. Elegir el servicio adecuado para la tarea y aprovechar la automatización ayuda a lograr la eficiencia.
+
+Siguiendo las directrices de MCRA, Tailwind Traders puede crear una arquitectura en la nube segura, de alta disponibilidad y rentable en Azure.
