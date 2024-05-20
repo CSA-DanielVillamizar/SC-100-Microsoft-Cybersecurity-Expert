@@ -1,0 +1,46 @@
+## Tailwind Traders: Evaluación de la postura de seguridad e implementación de inteligencia de amenazas
+
+El nuevo CIO de Tailwind Traders está priorizando las evaluaciones de seguridad y la inteligencia de amenazas. A continuación, se muestra cómo pueden lograr estos objetivos:
+
+**Evaluar la postura de seguridad**
+
+* **Azure Security Benchmark:** Esta es la herramienta más adecuada para este escenario.
+
+**Justificación:**
+
+* Azure Security Benchmark proporciona una guía de referencia detallada con recomendaciones para proteger los recursos de Azure.
+* Se alinea con las mejores prácticas de la industria y ayuda a identificar posibles brechas de seguridad en el entorno de nube de Tailwind Traders.
+
+* **Secure Score:** Si bien es valioso, es posible que no sea suficiente para una evaluación completa.
+* Secure Score ofrece una medición de la postura de seguridad en un punto en el tiempo y no proporciona el mismo nivel de detalle que Security Benchmark.
+
+**Seguimiento del progreso a lo largo del tiempo**
+
+* **Azure Security Center:** Este servicio integrado se puede aprovechar para rastrear las mejoras en la postura de seguridad con el tiempo.
+
+* Azure Security Center monitorea continuamente la postura de seguridad, identifica vulnerabilidades y recomienda pasos de remediación.
+* Al comparar evaluaciones pasadas con el estado actual, el CSO puede demostrar el progreso al CIO.
+
+**Inteligencia de amenazas**
+
+* **Azure Sentinel:** Este servicio de gestión de información y eventos de seguridad (SIEM) puede agregar fuentes de inteligencia de amenazas (CTI) de diversas fuentes.
+
+* Azure Sentinel permite crear paneles que visualizan datos de CTI, proporcionando al CSO información procesable sobre posibles amenazas.
+
+* **Microsoft Defender para Cloud:** Este servicio ofrece informes de inteligencia de amenazas integrados que se pueden utilizar para mejorar las defensas de Tailwind Traders.
+
+* Defender for Cloud analiza los datos de amenazas y proporciona recomendaciones sobre cómo mitigar los riesgos potenciales identificados a través de la inteligencia de amenazas.
+
+**Capacidad de seguridad para usuarios remotos**
+
+* **Acceso condicional de Azure Active Directory (AAD):** Este servicio permite implementar políticas de seguridad basadas en la ubicación geográfica del usuario.
+
+* El acceso condicional puede imponer la autenticación multifactor (MFA) o restringir el acceso a recursos específicos para los usuarios que acceden desde ubicaciones de alto riesgo.
+* Esto empodera a los usuarios remotos al tiempo que mantiene la seguridad en función de su ubicación.
+
+**Consideraciones adicionales:**
+
+* El CSO debe realizar evaluaciones de seguridad y revisiones de inteligencia de amenazas con regularidad para mantener una postura de seguridad proactiva.
+* La implementación de estas soluciones puede permitir al CIO mostrar el progreso en las operaciones de seguridad en la nube.
+
+Siguiendo estas recomendaciones, Tailwind Traders puede evaluar de manera efectiva su postura de seguridad, aprovechar la inteligencia de amenazas e implementar un acceso seguro para usuarios remotos, alineándose con la visión del CIO.
