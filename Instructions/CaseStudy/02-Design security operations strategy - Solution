@@ -1,0 +1,42 @@
+## Tailwind Traders: Operaciones de Seguridad con Azure
+
+Tailwind Traders necesita una solución sólida de Operaciones de Seguridad para su entorno de Azure. A continuación, se muestra cómo pueden aprovechar los servicios de Azure para satisfacer sus requisitos:
+
+**Recopilación de registros de seguridad y actividad**
+
+Tailwind Traders tiene varias opciones para recopilar registros en Azure:
+
+* **Azure Monitor Logs:** Este es el servicio central para recopilar y almacenar registros de la plataforma, aplicaciones y registros personalizados. Ofrece varios métodos de recopilación de registros, como agentes (para máquinas virtuales y contenedores), espacios de trabajo de Log Analytics y API.
+
+**Evaluación y decisión:**
+
+* Azure Monitor Logs es una solución integral para recopilar todos los registros de Azure disponibles. Se integra a la perfección con Microsoft Sentinel para la gestión de información y eventos de seguridad (SIEM).
+
+**Prevención, detección y respuesta a amenazas**
+
+Tailwind Traders puede lograr una mejor gestión de amenazas con:
+
+* **Microsoft Sentinel:** Este servicio SIEM ingiere registros de Azure Monitor Logs y otras fuentes, lo que permite a los analistas de seguridad correlacionar eventos, identificar amenazas y desencadenar respuestas automatizadas.
+* **Azure Security Center:** Esta herramienta nativa de la nube para la gestión de información y eventos de seguridad (SIEM) y la gestión ampliada de la postura de seguridad (XESP) proporciona detección de amenazas, gestión de vulnerabilidades y recomendaciones de seguridad.
+
+**Evaluación y decisión:**
+
+* Microsoft Sentinel ofrece capacidades de análisis y automatización avanzadas para escenarios de seguridad complejos.
+* Azure Security Center proporciona un buen punto de partida para la detección básica de amenazas y la gestión de vulnerabilidades, pero podría no ser suficiente para las necesidades avanzadas de Tailwind Traders.
+
+**Incorporación de servicios de operaciones de seguridad de Azure**
+
+A continuación, se muestra cómo Tailwind Traders puede aprovechar los servicios de seguridad de Azure:
+
+* **Azure Active Directory (AAD):** Implemente una gestión de identidades y accesos (IAM) sólida con autenticación multifactor (MFA) y políticas de acceso condicional.
+* **Azure Defender for Cloud:** Utilice este servicio para el análisis de vulnerabilidades, la detección de amenazas y la respuesta a incidentes en todos los recursos de Azure.
+* **Azure Security Center:** Como se mencionó anteriormente, este servicio proporciona detección de amenazas y recomendaciones de seguridad adicionales.
+
+**Alineación con la arquitectura de referencia de seguridad (SRA)**
+
+La Arquitectura de referencia de ciberseguridad de Microsoft (SRA) (mencionada en los Recursos) proporciona un plan para crear arquitecturas de nube seguras. Las soluciones elegidas se alinean con la SRA al:
+
+* **Registro centralizado:** Azure Monitor Logs actúa como el punto central de recopilación de registros, lo que se alinea con el enfoque de la SRA en la gestión centralizada de datos (diapositiva 51).
+* **Herramientas de operaciones de seguridad:** Microsoft Sentinel y Azure Security Center son herramientas de operaciones de seguridad centrales recomendadas por la SRA (diapositiva 49).
+
+Al implementar estas soluciones, Tailwind Traders puede obtener una visibilidad completa de su entorno de Azure, prevenir, detectar y responder a amenazas de manera efectiva y garantizar una arquitectura de nube segura alineada con las mejores prácticas de la industria.
