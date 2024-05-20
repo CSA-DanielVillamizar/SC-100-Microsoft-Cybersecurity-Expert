@@ -1,0 +1,46 @@
+## Contoso Banking: Migración Segura a la Nube con CAF
+
+Contoso Banking necesita diseñar una Zona de Aterrizaje segura de Azure para su migración a la nube. A continuación, se muestra cómo pueden aprovechar el Marco de Adopción de la Nube (CAF) para lograr sus objetivos:
+
+**Componentes de la Zona de Aterrizaje**
+
+Una Zona de Aterrizaje segura de Azure debe incluir los siguientes componentes:
+
+* **Grupo de administración:** Organiza y simplifica la gestión de recursos en todas las suscripciones.
+* **Suscripciones:** Suscripciones separadas para diferentes entornos (por ejemplo, producción, desarrollo, pruebas).
+* **Grupos de recursos:** Agrupe recursos relacionados para una gestión lógica.
+* **Azure Active Directory (AAD):** Servicio de gestión de identidades y accesos.
+* **Azure Policy:** Implementa las mejores prácticas de seguridad y configuraciones.
+* **Azure Key Vault:** Almacena y administra claves de cifrado.
+* **Azure Monitor:** Recopila y analiza registros para la supervisión de seguridad.
+* **Red virtual:** Proporciona un aislamiento seguro para los recursos.
+* **Grupo de seguridad de red (NSG):** Controla el tráfico de red entrante y saliente.
+
+**Impacto de la Carga de Trabajo en la Implementación**
+
+* **Entorno 1 (Sistemas bancarios centrales):** La alta seguridad es crucial. La implementación puede implicar más tiempo y complejidad debido a los estrictos requisitos de seguridad. Se deberán abordar controles de acceso más estrictos, segmentación de la red y posibles consideraciones de migración de la carga de trabajo.
+* **Entorno 2 (Aplicación FinTech):** Las implementaciones frecuentes (100x/mes) requieren un enfoque DevOps con automatización para implementaciones más rápidas al tiempo que se garantiza el cumplimiento (PCI-DSS). Concéntrese en la infraestructura como código (IaC) y las canalizaciones de integración continua/entrega continua (CI/CD).
+
+**Acceso Seguro a Aplicaciones Centrales**
+
+* **Azure Active Directory (AAD):**
+    * Gestión centralizada de identidades para usuarios.
+    * Autenticación multifactor (MFA) para una autenticación sólida.
+    * Políticas de acceso condicional para restringir el acceso según la ubicación, el dispositivo, etc.
+* **Azure Bastion:** Acceda de forma segura a las máquinas virtuales (VM) en la zona de aterrizaje desde un navegador web sin necesidad de una dirección IP pública para las VM.
+
+**Recomendaciones de Zona de Aterrizaje**
+
+* **Entorno 1 (Sistemas bancarios centrales):**
+    * **Zona de Aterrizaje Segura de CAF:** Esta arquitectura de referencia proporciona una base segura para cargas de trabajo altamente reguladas, en consonancia con las necesidades bancarias centrales de Contoso Banking.
+    * Consideraciones adicionales: cifrado de datos en reposo y en tránsito, segmentación de la red para el aislamiento de la carga de trabajo y posibles estrategias de migración de la carga de trabajo.
+* **Entorno 2 (Aplicación FinTech):**
+    * **Zona de Aterrizaje DevOps de CAF:** Esta arquitectura de referencia está diseñada para implementaciones rápidas y canalizaciones de integración continua/entrega continua (CI/CD), ideal para las versiones de aplicaciones FinTech de alta frecuencia de Contoso Banking.
+    * Consideraciones adicionales: Implemente la infraestructura como código (IaC) para implementaciones repetibles y aproveche las herramientas de Azure DevOps para las canalizaciones de CI/CD.
+
+**Consideraciones de Plazo**
+
+* El plazo de 6 meses para la migración general podría ser un desafío. Si bien las arquitecturas de referencia de CAF pueden proporcionar un punto de partida, se requerirá configuración y personalización adicionales.
+* Priorice el Entorno 1 (banca central) para una base segura. Se podría considerar un enfoque por fases con los sistemas bancarios centrales migrados primero, seguidos de la aplicación FinTech.
+
+Al utilizar las Zonas de Aterrizaje Seguras y DevOps de CAF como base y abordar los requisitos específicos de la carga de trabajo, Contoso Banking puede establecer un entorno en la nube seguro y escalable para su viaje FinTech.
